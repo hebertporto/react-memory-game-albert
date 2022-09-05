@@ -1,39 +1,55 @@
-body {
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(rgba(18,93,40,1), rgba(52,255,0,1));
-    display: flex;
-    flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.main-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 204, 65);
+  height: 100vh;
+  padding-top: 60px;
 }
+
 #maintitle {
-    font-family: 'Qwitcher Grypen', cursive;
-    font-size: 60px;
-    margin: 0%;
-    font-weight: 900;
+  font-family: "Bebas Neue", cursive;
+  font-size: 68px;
+  font-weight: 800;
+  color: white;
 }
+
 .header h3 {
-    font-weight: 100;
-    font-weight: 12px;
-    width: 400px;
+  font-family: "Bebas Neue", cursive;
+
+  font-weight: 100;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
 }
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: rgb(212, 203, 23);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 15px;
+
+.main-card-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 170px;
+  margin-top: 60px;
+  padding: 10px;
 }
-.card img{
-    width: 250px;
-    height: 250px;
+
+.card img {
+  width: 130px;
+  height: 130px;
+  cursor: pointer;
 }
 .card img:hover {
-    box-shadow: 0 0 11px rgba(241, 237, 11, 0.967); 
+  background-color: #ad310b;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  border-radius: 8px;
 }

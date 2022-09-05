@@ -1,14 +1,9 @@
-import React from "react";
-import pikachu from "../img/pikachu.png";
-import { useState } from "react";
-
-function Card(props) {
-  const [name, setName] = useState(pikachu);
+function Card({ name, onClick }) {
   return (
-    <div className="card">
-      <img src={props.name} alt="pikachu" onClick={props.onClick} />
+    <div className='card'>
+      <img src={name} alt={`card-${name}`} onClick={onClick} />
     </div>
   );
 }
 
-export default Card;
+export { Card };
